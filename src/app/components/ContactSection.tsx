@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Mail, Send, Check, AlertCircle } from "lucide-react";
 
 // 🔧 REPLACE THIS with your actual Make.com webhook URL
-const MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/YOUR_WEBHOOK_ID_HERE";
+const MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/4jma7qvl8g4og9rcav6ey74xul7i8qr8";
 
 export function ContactSection() {
   const [isVisible, setIsVisible] = useState(false);
