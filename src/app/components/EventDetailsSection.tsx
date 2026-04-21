@@ -37,7 +37,7 @@ const details = [
 
 // Exact embed: Qudos Bank Arena, 19 Edwin Flack Ave, Sydney Olympic Park NSW 2127
 const MAP_EMBED =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.676!2d151.06155!3d-33.84755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bb573e1af29f%3A0x5fd6a6f3b7e0f0c0!2sQudos+Bank+Arena%2C+19+Edwin+Flack+Ave%2C+Sydney+Olympic+Park+NSW+2127%2C+Australia!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.5!2d151.0619254!3d-33.8442832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a4b08ed5bcb3%3A0x1b040938318011e5!2sQudos+Bank+Arena!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau";
 
 export function EventDetailsSection() {
   const [isVisible, setIsVisible] = useState(false);
