@@ -1,6 +1,20 @@
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { Mail, Send, Check, AlertCircle } from "lucide-react";
+import { Mail, Send, Check, AlertCircle, Instagram, Facebook, Youtube } from "lucide-react";
+
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.22 8.22 0 004.84 1.56V6.79a4.85 4.85 0 01-1.07-.1z"/>
+    </svg>
+  );
+}
+
+const socialLinks = [
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com", color: "from-pink-500 to-orange-500" },
+  { icon: Facebook, label: "Facebook", href: "https://facebook.com", color: "from-blue-600 to-blue-500" },
+  { icon: Youtube, label: "YouTube", href: "https://youtube.com", color: "from-red-600 to-red-500" },
+];
 
 // 🔧 REPLACE THIS with your actual Make.com webhook URL
 const MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/4jma7qvl8g4og9rcav6ey74xul7i8qr8";
@@ -197,6 +211,39 @@ export function ContactSection() {
             )}
           </motion.button>
         </motion.form>
+
+        {/* Social Media Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-12 text-center"
+        >
+          <p className="text-gray-400 mb-4">Follow us on social media</p>
+          <div className="flex items-center justify-center flex-wrap gap-3">
+            {socialLinks.map((link, i) => (
+              <a
+                key={i}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r ${link.color} text-white text-sm font-medium hover:opacity-90 transition-opacity`}
+              >
+                <link.icon className="w-4 h-4" />
+                {link.label}
+              </a>
+            ))}
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 text-white text-sm font-medium hover:opacity-90 transition-opacity border border-white/10"
+            >
+              <TikTokIcon className="w-4 h-4" />
+              TikTok
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

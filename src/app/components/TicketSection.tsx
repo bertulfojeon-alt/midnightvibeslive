@@ -18,7 +18,7 @@ const tickets = [
     ageNote: "All Ages Welcome",
   },
   {
-    name: "VIP Experience",
+    name: "VIP Package",
     price: "$199.00",
     priceNote: "from",
     features: [

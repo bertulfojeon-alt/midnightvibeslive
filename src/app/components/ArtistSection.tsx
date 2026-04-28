@@ -3,10 +3,10 @@ import { useEffect, useRef, useState } from "react";
 import { Award, Music, TrendingUp, Users, Instagram, Facebook, Youtube, ExternalLink } from "lucide-react";
 
 const achievements = [
-  { icon: Award, label: "3x Grammy Winner", value: "2023-2025" },
+  { icon: Award, label: "ARIA Nominated", value: "2023–2025" },
   { icon: TrendingUp, label: "500M+ Streams", value: "Spotify" },
   { icon: Users, label: "World Tour", value: "50+ Cities" },
-  { icon: Music, label: "Platinum Albums", value: "5 Releases" },
+  { icon: Music, label: "#1 Chart Albums", value: "5 Releases" },
 ];
 
 const socialLinks = [
@@ -143,19 +143,16 @@ export function ArtistSection() {
                 <Music className="w-5 h-5 text-purple-400" />
                 Latest Hits
               </h3>
-              <div className="bg-black/40 rounded-lg p-4 border border-white/10">
-                <p className="text-xs text-gray-500 mb-3">Now Playing</p>
-                <p className="text-white font-medium mb-3">Midnight Vibes — Top Tracks</p>
-                {/* Placeholder audio element — swap src for real MP3 link */}
-                <audio
-                  controls
-                  className="w-full accent-purple-500"
-                  style={{ colorScheme: "dark" }}
-                >
-                  <source src="YOUR_MP3_LINK_HERE" type="audio/mpeg" />
-                  Your browser does not support the audio element.
-                </audio>
-                <p className="text-xs text-gray-600 mt-2 text-center">Replace src with your MP3 link when ready</p>
+              <div className="rounded-lg overflow-hidden">
+                <iframe
+                  src="https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b?utm_source=generator&theme=0"
+                  width="100%"
+                  height="80"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  style={{ border: 0, borderRadius: "8px" }}
+                  title="Spotify Player"
+                />
               </div>
             </motion.div>
 

@@ -111,7 +111,7 @@ export function HeroSection() {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-purple-400" />
-                <span>Doors Open 7:00 PM</span>
+                <span>Doors Open 6:00 PM</span>
               </div>
             </div>
           </motion.div>

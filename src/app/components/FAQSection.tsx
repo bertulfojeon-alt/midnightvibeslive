@@ -36,6 +36,14 @@ const faqs = [
     question: "Is the venue accessible for people with disabilities?",
     answer: "Yes, Qudos Bank Arena is fully wheelchair accessible with companion seating, accessible restrooms, and designated parking. Contact us for specific accessibility requirements.",
   },
+  {
+    question: "Is re-entry allowed?",
+    answer: "Re-entry is not permitted once you have exited the venue. Please ensure you have everything you need before leaving the arena.",
+  },
+  {
+    question: "What if the event is postponed or cancelled?",
+    answer: "In the event of a postponement or cancellation, ticket holders will be notified via email. Refunds or exchanges will be processed in accordance with the ticket provider's terms and conditions.",
+  },
 ];
 
 export function FAQSection() {

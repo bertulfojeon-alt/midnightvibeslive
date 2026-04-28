@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { Calendar, MapPin, Car, Train, Music, Users } from "lucide-react";
+import { Calendar, MapPin, Car, Train, Music, Users, Mic2 } from "lucide-react";
 
 const details = [
   {
@@ -108,6 +108,27 @@ export function EventDetailsSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent pointer-events-none" />
           </motion.div>
         </div>
+
+        {/* Event Description */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.6 }}
+          className="mt-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-purple-500/30 transition-all"
+        >
+          <div className="flex items-center gap-3 mb-4">
+            <div className="p-3 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg">
+              <Mic2 className="w-6 h-6 text-purple-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white">About the Event</h3>
+          </div>
+          <p className="text-gray-300 text-lg leading-relaxed">
+            Get ready for a night of genre-bending music — blending electronic, R&B, and live band energy into one
+            unforgettable experience. Expect fan-favourite hits, teases of new releases, and a jaw-dropping production
+            featuring state-of-the-art lighting and sound. This isn't just a concert. It's an event that defines a
+            generation.
+          </p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scaleX: 0 }}

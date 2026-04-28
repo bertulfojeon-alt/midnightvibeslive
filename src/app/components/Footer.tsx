@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Music, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Music, Facebook, Instagram, Youtube } from "lucide-react";
 import { useState } from "react";
 import { TermsModal } from "./TermsModal";
 import { PrivacyModal } from "./PrivacyModal";
@@ -7,15 +7,13 @@ import { PrivacyModal } from "./PrivacyModal";
 const navigation = [
   { name: "Home", href: "#" },
   { name: "Tickets", href: "#tickets" },
-  { name: "Event Details", href: "#details" },
-  { name: "FAQ", href: "#faq" },
+  { name: "FAQs", href: "#faq" },
   { name: "Contact", href: "#contact" },
 ];
 
 const social = [
   { name: "Facebook", icon: Facebook, href: "https://facebook.com" },
   { name: "Instagram", icon: Instagram, href: "https://instagram.com" },
-  { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
   { name: "YouTube", icon: Youtube, href: "https://youtube.com" },
 ];
 

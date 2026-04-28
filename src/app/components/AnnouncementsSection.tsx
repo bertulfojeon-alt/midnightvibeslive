@@ -14,7 +14,7 @@ const announcements = [
     icon: Info,
     type: "info",
     title: "Set Times Confirmed",
-    message: "Supporting acts: 8:30 PM | Main act: 10:00 PM. Gates open at 7:00 PM.",
+    message: "Supporting acts: 8:30 PM | Main act: 10:00 PM. Gates open at 6:00 PM.",
     time: "1 day ago",
   },
   {
@@ -25,11 +25,18 @@ const announcements = [
     time: "2 days ago",
   },
   {
+    icon: Info,
+    type: "info",
+    title: "Melbourne Show Added",
+    message: "Due to overwhelming demand, a second show has been added — Melbourne, Rod Laver Arena, 6th December 2025. Tickets on sale now!",
+    time: "4 days ago",
+  },
+  {
     icon: AlertCircle,
     type: "warning",
     title: "Traffic Advisory",
     message: "Major event day. Please allow extra travel time and consider public transport.",
-    time: "3 days ago",
+    time: "5 days ago",
   },
 ];
 
