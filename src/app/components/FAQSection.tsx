@@ -18,7 +18,11 @@ const faqs = [
   },
   {
     question: "What time should I arrive?",
-    answer: "Gates open at 7:00 PM. We recommend arriving early to allow time for security screening and to secure your spot, especially for general admission tickets.",
+    answer: "Gates open at 6:00 PM. We recommend arriving early to allow time for security screening and to secure your spot, especially for general admission tickets.",
+  },
+  {
+    question: "What's the bag policy?",
+    answer: "Small bags only (max 30cm are permitted). No outside food or drinks allowed. Sealed water bottles are permitted. All bags are subject to inspection at entry.",
   },
   {
     question: "Is there an age limit?",

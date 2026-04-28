@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { MapPin, Navigation, Accessibility, ShieldCheck, ChevronDown } from "lucide-react";
+import { MapPin, Navigation, Accessibility, ShieldCheck, ChevronDown, Car } from "lucide-react";
 import * as Accordion from "@radix-ui/react-accordion";
 
 const venueInfo = [
@@ -12,7 +12,12 @@ const venueInfo = [
   {
     icon: Navigation,
     title: "Directions",
-    content: "5 minute walk from Olympic Park Train Station\nBuses, taxis & rideshare drop-off available at main entrance",
+    content: "By Train: Olympic Park Station — 5 min walk to venue\nBy Car: Via M4 or Parramatta Road to Sydney Olympic Park\nBy Bus/Rideshare: Drop-off available at main entrance",
+  },
+  {
+    icon: Car,
+    title: "Parking",
+    content: "P1–P5 on-site parking available\nPre-book online (recommended) via Sydney Olympic Park\n$15 pre-booked · $25 at gate on event day",
   },
   {
     icon: Accessibility,
